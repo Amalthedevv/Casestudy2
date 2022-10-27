@@ -15,8 +15,7 @@ app.use(express.static(path.join(__dirname+'/dist/FrontEnd')));
 
 const mongoose = require('mongoose')
 
-const EMPLOYEE_DATA = require('./models/employee');
-const { find } = require('../MongoDB L/models/Student');
+
 const EmployeeData = require('./models/employee');
 
 
