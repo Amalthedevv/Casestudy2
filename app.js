@@ -76,7 +76,7 @@ app.get('/api/employeelist/:id', (req,res)=>{
     
     }
 
-    })
+    }) 
 
 
 
@@ -88,7 +88,7 @@ app.post('/api/employeelist', async (req,res)=>{
     try {
         let item = req.body;
         console.log('data : ',item)
-        const user = new EMPLOYEE_DATA(item)
+        const user = new EmployeeData(item)
         const savedUser = await user.save()
         res.send(savedUser)
     } catch (error) {
